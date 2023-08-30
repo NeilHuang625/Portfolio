@@ -12,14 +12,25 @@
     "@react-three/drei": "9.75.0",
     "@react-three/fiber": "8.13.3",
     "@types/three": "0.152.1",
+    "framer-motion": "^10.16.1",
+    "framer-motion-3d": "^10.16.1",
+    "gsap": "^3.12.2",
+    "jotai": "^2.4.0",
+    "leva": "^0.9.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "read-pkg-up": "^10.1.0",
+    "sharp": "^0.32.5",
     "three": "0.153.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.15",
+    "gltfjsx": "^6.2.12",
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3",
     "vite": "^4.1.0"
   }
 }
