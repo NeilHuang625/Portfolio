@@ -1,3 +1,0 @@
-12345 first change
-Add this line (second time)
-Changed this line in branch FixBug
