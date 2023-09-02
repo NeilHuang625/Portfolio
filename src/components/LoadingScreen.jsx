@@ -9,14 +9,14 @@ export const LoadingScreen = (props)=>{
         if(progress == 100){
             setTimeout(()=>{
                 setStarted(true)
-            }, 400)
+            }, 500)
         }
     }, [progress, total, loaded, item])
 
     return (
         <div
             className={`
-                fixed top-0 w-full h-full z-50 transition-opacity duration-1000 pointer-events-none
+                fixed top-0 left-0 w-full h-full z-50 transition-opacity duration-1000 pointer-events-none
                 flex items-center justify-center bg-indigo-50
                 ${started ? "opacity-0" : "opacity-100"}
             `
@@ -27,9 +27,9 @@ export const LoadingScreen = (props)=>{
                     className="absolute left-0 top-0 overflow-hidden truncate text-clip transition-all duration-500"
                     style={{width: `${progress}%`}}
                 >
-                    Neil Is Coming
+                    KIA ORA I'M NEIL
                 </div>
-                <div className="opacity-40" >Neil Is Coming</div>
+                <div className="opacity-40" >KIA ORA I'M NEIL</div>
             </div>
 
         </div>
