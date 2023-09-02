@@ -8,6 +8,19 @@ import { Cursor } from "./Cursor"
 
 export const projects = [
     {
+        title:"Linkedin",
+        url:"https://www.linkedin.com/in/neil-huang-31169b1b5/",
+        image:"../projects/linkedin.jpeg",
+        description:"Here I post the activities in which I shared and exchanged ideas in IT field with like-minded friends within various groups.",
+    },
+    
+    {
+        title:"Ninja Runner",
+        url:"http://feihuang.azurewebsites.net/",
+        image:"../projects/ninjarunner.jpg",
+        description:"Fueled by a strong sense of curiosity, I joined an MSA study group and developed my very first web game",
+    },
+    {
         title:"YelpCamp",
         url:"https://yelpcamp-f2wv.onrender.com/",
         image:"../projects/yelpcamp.jpg",
@@ -20,11 +33,12 @@ export const projects = [
         description:"A fancy 3D Portfolio showcasing a brief overview of my personal profile",
     },
     {
-        title:"Ninja Runner",
-        url:"http://feihuang.azurewebsites.net/",
-        image:"../projects/ninjarunner.jpg",
-        description:"Fueled by a strong sense of curiosity, I joined an MSA study group and developed my very first web game",
+        title:"GitHub",
+        url:"https://github.com/NeilHuang625/",
+        image:"../projects/github.jpg",
+        description:"Wanna see how my Repo look like? Click it",
     },
+    
 ]
 
 const Project = (props)=>{

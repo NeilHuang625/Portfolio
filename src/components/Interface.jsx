@@ -47,13 +47,13 @@ const AboutSection = (props)=>{
     const {setSection} = props
     return (
         <Section mobileTop>
-            <h1 className="text-white md:text-black text-4xl md:text-6xl font-extrabold leading-snug mt-8 md:mt-0">
+            <h1 className="text-white md:text-black text-4xl md:text-7xl font-extrabold leading-snug mt-8 md:mt-0">
                 Hi, I'm
                 <br />
                 <span className=" bg-black md:bg-white px-1 italic">Neil</span>
             </h1>
             <motion.p
-                className="text-lg text-white md:text-gray-600 mt-4"
+                className="text-2xl px-1 text-white md:text-black mt-4"
                 initial={{
                 opacity: 0,
                 y: 25,
@@ -71,7 +71,9 @@ const AboutSection = (props)=>{
                 <br />
                 Proficient in problem-solving
                 <br/>
-                and derive a sense of achievement from it
+                and derive a sense of
+                <br />
+                achievement from it
             </motion.p>
             <motion.button
                 className={`bg-indigo-600 text-white py-4 px-8 
