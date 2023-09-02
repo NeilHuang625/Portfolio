@@ -15,6 +15,11 @@ export const Experience = (props)=>{
   const {menuOpened} = props;
   const {viewport} = useThree();
   const data = useScroll();
+
+  const isMobile = window.innerWidth < 768;
+  const responsiveRatio = viewport.width / 14 ;
+  const officeScaleRatio = Math.max(0.4 , Math.min(0.9 * responsiveRatio,0.9))
+
   const [section, setSection] = useState(0)
 
   const cameraPositionX = useMotionValue();
@@ -36,7 +41,9 @@ export const Experience = (props)=>{
     setTimeout(()=>{
       setCharacterAnimation(section===0 ? "Typing" : "Standing")
     },300)
-  }, [section])
+  }, [section]);
+
+  const characterGroup = useRef();
 
   useFrame((state)=>{
 
@@ -55,7 +62,9 @@ export const Experience = (props)=>{
     state.camera.lookAt(cameraLookAtX.get(), 0, 0)
 
     // const position = new THREE.Vector3()
-    // characterContainerAboutRef.current.getWorldPosition(position)
+    if(section === 0){
+      characterContainerAboutRef.current.getWorldPosition(characterGroup.current.position)
+    }
     // // console.log([position.x, position.y, position.z])
   
 
@@ -71,51 +80,63 @@ export const Experience = (props)=>{
     <>
     <Background />
      <motion.group 
-      position={[1.7095793776645283, 0.15536969999999994, 2.7271671327653707]}
+      ref={characterGroup}
       rotation={[3.141592653589793, 1.1493981633974486, -3.141592653589793]}
+      scale={[officeScaleRatio, officeScaleRatio, officeScaleRatio]}
       transition={{
         duration:0.5
       }}
       animate={"" + section}
       variants={{
         0:{
-          scaleX:1.5,
-          scaleY:1.5,
-          scaleZ:1.5
+          scaleX:1.6*officeScaleRatio,
+          scaleY:1.6*officeScaleRatio,
+          scaleZ:1.6*officeScaleRatio
         },
         1:{
           y:-viewport.height +1.5,
-          x:0,
+          x: isMobile ? 0.3 : 0,
           z:7,
-          rotateY:Math.PI,
+          rotateX:0,
+          rotateY: isMobile ? -Math.PI/6 : Math.PI/6,
+          rotateZ:0,
+          scaleX: isMobile ? 1.2 : 1,
+          scaleY: isMobile ? 1.2 : 1,
+          scaleZ: isMobile ? 1.2 : 1,
         },
         2:{
-          x:-2,
+          x: isMobile? -1.2 : -2,
           y:-viewport.height * 2 ,
           z:3,
           rotateX:0,
           rotateY:Math.PI /2,
           rotateZ:-0.25,
+          scaleX:1,
+          scaleY:1,
+          scaleZ:1,
         },
         3:{
-          x:0,
-          y:-viewport.height *2.8 ,
+          x: isMobile ? 0.2 : 0,
+          y: isMobile ? -viewport.height * 2.77 : -viewport.height *2.8 ,
           z:7,
           rotateX:0,
           rotateY:-Math.PI/6,
           rotateZ:0,
+          scaleX:1,
+          scaleY:1,
+          scaleZ:1,
         },
       }}
      >
-        <Avatar animation={characterAnimation} />
+        <Avatar animation={characterAnimation} wireframe={section === 1}/>
      </motion.group>
       <ambientLight intensity={1} />
       <motion.group
-        position={ [ 1.6, 2, 3 ] }
-        scale={[0.9, 0.9, 0.9]}
+        position={ [isMobile ? 0: 1.6 * officeScaleRatio, isMobile? -viewport.height : 2, 3 ] }
+        scale={[officeScaleRatio, officeScaleRatio, officeScaleRatio]}
         rotation-y={-Math.PI /4}
         animate={{
-          y:section===0 ? 0 : -1
+          y: isMobile ? -viewport.height /10 : 0 
         }}
       >
         <Office section={section} />

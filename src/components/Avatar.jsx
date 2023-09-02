@@ -10,7 +10,7 @@ import { useControls } from 'leva';
 import * as THREE from "three";
 
 export function Avatar(props) {
-  const {animation} = props
+  const {animation, wireframe} = props
   const group = useRef();
   const { nodes, materials } = useGLTF('models/64dedf7dcfdd0f000d00d954.glb')
   const {animations: typingAnimation} = useFBX("animations/Typing.fbx")
@@ -22,7 +22,7 @@ export function Avatar(props) {
   fallingAnimation[0].name = "Falling";
 
   const {actions} = useAnimations([typingAnimation[0],standingAnimation[0],fallingAnimation[0]], group)
-  const {headFollow, cursorFollow, wireframe} = useControls({
+  const {headFollow, cursorFollow} = useControls({
         headFollow:false,
         cursorFollow:false,
         wireframe:false,
@@ -72,3 +72,7 @@ export function Avatar(props) {
 }
 
 useGLTF.preload('models/64dedf7dcfdd0f000d00d954.glb')
+
+useFBX.preload("animations/Typing.fbx")
+useFBX.preload("animations/Standing.fbx")
+useFBX.preload("animations/Falling.fbx")

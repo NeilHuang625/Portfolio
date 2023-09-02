@@ -528,6 +528,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formspree/core@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@formspree/core@npm:3.0.1"
+  dependencies:
+    "@stripe/stripe-js": ^1.35.0
+  checksum: 186f367f089ec7fb197747af8eecf006bd307a65dc2a4a113b18de86e25c00c0bc82bd776dd95a0bd9907e15fa57cdfefc2540305125f7af822d0af4c8a41754
+  languageName: node
+  linkType: hard
+
+"@formspree/react@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "@formspree/react@npm:2.5.1"
+  dependencies:
+    "@formspree/core": ^3.0.1
+    "@stripe/react-stripe-js": ^1.7.1
+    "@stripe/stripe-js": ^1.35.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: a1aa2f1da7d8508aabb715b5780a35675bf9bfc823ad83ff29fe9bac031ba7302f3c02aaf3d0d8c49e219faeb874c25f5c8c4570c92c5328a690285cc3a0ee15
+  languageName: node
+  linkType: hard
+
 "@gltf-transform/core@npm:3.4.8, @gltf-transform/core@npm:^3.4.8":
   version: 3.4.8
   resolution: "@gltf-transform/core@npm:3.4.8"
@@ -1179,6 +1202,26 @@ __metadata:
   peerDependencies:
     react: ">= 16.3.0"
   checksum: 029795323cdedb5599ec0636526fc233b2cf41fa9c1f4a704b1f7f457c6170053384a7430afed45e25f73e348d7c391cf1379bc079943cd9cad44302234a5244
+  languageName: node
+  linkType: hard
+
+"@stripe/react-stripe-js@npm:^1.7.1":
+  version: 1.16.5
+  resolution: "@stripe/react-stripe-js@npm:1.16.5"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@stripe/stripe-js": ^1.44.1
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: fc43248af6fd1f9825463eeb23183b586635048e544c7fa076ee59e85439e7864afaca4adee2a62a9d1cf9a72ce7eaf405dbeffec9ff34e6e0464be0cc92c6a8
+  languageName: node
+  linkType: hard
+
+"@stripe/stripe-js@npm:^1.35.0":
+  version: 1.54.2
+  resolution: "@stripe/stripe-js@npm:1.54.2"
+  checksum: d5c4a71383c33da3f3badd2ac03073a90250fc0e04b2ecd571f73f34db2266c9fdfc64947410845d58dce074547424bd133f8f24bf86de69dfeb73d140c0bdc8
   languageName: node
   linkType: hard
 
@@ -3813,7 +3856,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.0, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3880,6 +3923,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "r3f-vite-starter@workspace:."
   dependencies:
+    "@formspree/react": ^2.5.1
     "@react-three/drei": 9.75.0
     "@react-three/fiber": 8.13.3
     "@types/react": ^18.0.27
