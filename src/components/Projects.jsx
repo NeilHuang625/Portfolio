@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     title: "YelpCamp",
-    url: "https://yelpcamp-f2wv.onrender.com/",
+    url: "https://13.210.117.53/",
     image: "../projects/yelpcamp.jpg",
     description:
       "A web project involving both frontend and backend development using JavaScript",
