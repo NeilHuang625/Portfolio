@@ -44,10 +44,10 @@ export const projects = [
       "A fancy 3D Portfolio showcasing a brief overview of my personal profile",
   },
   {
-    title: "GitHub",
-    url: "https://github.com/NeilHuang625/",
-    image: "../projects/github.jpg",
-    description: "Wanna see how my Repo look like? Click it",
+    title: "React Quiz",
+    url: "https://main.d2uqrkrwsrl48i.amplifyapp.com/",
+    image: "../projects/react_quiz.jpg",
+    description: "Using useReducer as a state management tool",
   },
 ];
 
