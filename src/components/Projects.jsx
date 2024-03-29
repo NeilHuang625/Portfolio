@@ -7,13 +7,6 @@ import { animate, useMotionValue } from "framer-motion";
 import { Cursor } from "./Cursor";
 
 export const projects = [
-  {
-    title: "Linkedin",
-    url: "https://www.linkedin.com/in/neil-huang-31169b1b5/",
-    image: "../projects/linkedin.jpeg",
-    description:
-      "Here I post the activities in which I shared and exchanged ideas in IT field with like-minded friends within various groups.",
-  },
 
   {
     title: "Ninja Runner",
@@ -21,6 +14,21 @@ export const projects = [
     image: "../projects/ninjarunner.jpg",
     description:
       "Fueled by a strong sense of curiosity, I joined an MSA study group and developed my very first web game",
+  },
+  {
+    title: "Biosecurity",
+    url: "https://neiltang625.pythonanywhere.com/",
+    image: "../projects/biosecurity.jpg",
+    description:
+      "A full-stack web application utilizing Python, MySQL, Flask framework, Jinja template, and Bootstrap",
+  },
+
+  {
+    title: "Swimming Club",
+    url: "https://groupaplus.pythonanywhere.com/",
+    image: "../projects/swimming_club.jpg",
+    description:
+      "A full-stack web application utilizing Python, MySQL, Flask framework, Jinja template, and Bootstrap",
   },
   {
     title: "usePopcorn",
