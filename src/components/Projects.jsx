@@ -7,7 +7,6 @@ import { animate, useMotionValue } from "framer-motion";
 import { Cursor } from "./Cursor";
 
 export const projects = [
-
   {
     title: "Ninja Runner",
     url: "http://feihuang.azurewebsites.net/",
@@ -39,7 +38,7 @@ export const projects = [
   },
   {
     title: "YelpCamp",
-    url: "https://13.210.117.53/",
+    url: "https://13.239.26.65/",
     image: "../projects/yelpcamp.jpg",
     description:
       "A web project involving both frontend and backend development using JavaScript",
