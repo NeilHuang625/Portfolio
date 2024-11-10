@@ -15,14 +15,6 @@ export const projects = [
       "Fueled by a strong sense of curiosity, I joined an MSA study group and developed my very first web game",
   },
   {
-    title: "Biosecurity",
-    url: "https://neiltang625.pythonanywhere.com/",
-    image: "../projects/biosecurity.jpg",
-    description:
-      "A full-stack web application utilizing Python, MySQL, Flask framework, Jinja template, and Bootstrap",
-  },
-
-  {
     title: "Swimming Club",
     url: "https://groupaplus.pythonanywhere.com/",
     image: "../projects/swimming_club.jpg",
@@ -35,6 +27,13 @@ export const projects = [
     image: "../projects/usePopcorn.jpg",
     description:
       "React web app involved in API, built-in hooks and custom hooks",
+  },
+  {
+    title: "TechMeet",
+    url: "https://main.d37hwvzkpt7c7a.amplifyapp.com/",
+    image: "../projects/techmeet.png",
+    description:
+      "A full-stack web app built with React, TypeScript, C#, ASP.NET Core, Entity Framework Core, SQL Server and Azure",
   },
   {
     title: "YelpCamp",
