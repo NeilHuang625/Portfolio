@@ -15,18 +15,18 @@ export const projects = [
       "Fueled by a strong sense of curiosity, I joined an MSA study group and developed my very first web game",
   },
   {
-    title: "Swimming Club",
-    url: "https://groupaplus.pythonanywhere.com/",
-    image: "../projects/swimming_club.jpg",
-    description:
-      "A full-stack web application utilizing Python, MySQL, Flask framework, Jinja template, and Bootstrap",
-  },
-  {
     title: "usePopcorn",
     url: "https://master.dt45xp8hm490s.amplifyapp.com/",
     image: "../projects/usePopcorn.jpg",
     description:
       "React web app involved in API, built-in hooks and custom hooks",
+  },
+  {
+    title: "Z&C Metal",
+    url: "https://zcmetalgate.co.nz",
+    image: "../projects/zcmetal.png",
+    description:
+      "Company official website built with React, vercel deployment with CI/CD setup",
   },
   {
     title: "TechMeet",
@@ -36,11 +36,11 @@ export const projects = [
       "A full-stack web app built with React, TypeScript, C#, ASP.NET Core, Entity Framework Core, SQL Server and Azure",
   },
   {
-    title: "YelpCamp",
-    url: "https://13.239.26.65/",
-    image: "../projects/yelpcamp.jpg",
+    title: "Online Cake Shop",
+    url: "https://brave-hill-01f4fa500.6.azurestaticapps.net/",
+    image: "../projects/cakeshop.png",
     description:
-      "A web project involving both frontend and backend development using JavaScript",
+      "E-Commerce platform built with ASP.NET Core, React, MongoDB and Stripe payment functionality",
   },
   {
     title: "Portfolio",
