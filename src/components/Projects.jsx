@@ -29,11 +29,11 @@ export const projects = [
       "Company official website built with React, vercel deployment with CI/CD setup",
   },
   {
-    title: "TechMeet",
-    url: "https://main.d37hwvzkpt7c7a.amplifyapp.com/",
-    image: "../projects/techmeet.png",
+    title: "SUGAR PRINCIPLE",
+    url: "https://www.sugars.co.nz/",
+    image: "../projects/sugars.png",
     description:
-      "A full-stack web app built with React, TypeScript, C#, ASP.NET Core, Entity Framework Core, SQL Server and Azure",
+      "E-Commerce platform built with ASP.NET Core, React, MongoDB and Stripe payment functionality",
   },
   {
     title: "Online Cake Shop",
